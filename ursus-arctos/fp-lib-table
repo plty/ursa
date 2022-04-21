@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name "seeduino-xiao")(type "KiCad")(uri "${KIPRJMOD}/../seeduino-xiao")(options "")(descr ""))
+  (lib (name "switches")(type "KiCad")(uri "${KIPRJMOD}/../keyboard_footprints/switches.pretty")(options "")(descr ""))
+  (lib (name "Encoder")(type "KiCad")(uri "${KIPRJMOD}/../0xLib/Encoder.pretty")(options "")(descr ""))
+  (lib (name "reee")(type "KiCad")(uri "/home/jer/p/ursa/reee.pretty")(options "")(descr ""))
+  (lib (name "marbastlib-various")(type "KiCad")(uri "/home/jer/p/ursa/marbastlib/marbastlib-various.pretty")(options "")(descr ""))
+)

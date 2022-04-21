@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "Seeeduino XIAO")(type "Legacy")(uri "${KIPRJMOD}/../seeduino-xiao/Seeeduino XIAO.lib")(options "")(descr ""))
+  (lib (name "reee")(type "KiCad")(uri "/home/jer/p/ursa/reee.kicad_sym")(options "")(descr ""))
+)
