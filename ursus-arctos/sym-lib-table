@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name "Seeeduino XIAO")(type "Legacy")(uri "${KIPRJMOD}/../seeduino-xiao/Seeeduino XIAO.lib")(options "")(descr ""))
-  (lib (name "reee")(type "KiCad")(uri "/home/jer/p/ursa/reee.kicad_sym")(options "")(descr ""))
+  (lib (name "xiao")(type "Legacy")(uri "${KIPRJMOD}/../lib/seeduino-xiao/Seeeduino XIAO.lib")(options "")(descr ""))
+  (lib (name "reee")(type "KiCad")(uri "${KIPRJMOD}/../lib/reee/reee.kicad_sym")(options "")(descr ""))
+  (lib (name "PCA9505DGG")(type "Legacy")(uri "${KIPRJMOD}/../lib/pca9505/PCA9505DGG_118.lib")(options "")(descr ""))
 )

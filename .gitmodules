@@ -1,9 +1,9 @@
 [submodule "marbastlib"]
-	path = marbastlib
+	path = lib/marbastlib
 	url = git@github.com:ebastler/marbastlib.git
 [submodule "keyboard_footprints"]
-	path = keyboard_footprints
+	path = lib/keyboard_footprints
 	url = git@github.com:pierrechevalier83/keyboard_footprints.git
 [submodule "0xLib"]
-	path = 0xLib
+	path = lib/0xLib
 	url = git@github.com:plut0nium/0xLib.git

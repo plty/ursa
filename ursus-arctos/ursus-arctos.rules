@@ -1,0 +1,85 @@
+
+(rules PCB ursus-arctos
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout on)
+    (app.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 25)
+    (start_pass_no 19)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.8)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 375.0)
+    (clear 200.2)
+    (clear 187.5 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "R_GND" "L_GND" "L_R0" "Net-(D1-Pad2)" "L_R1" "Net-(D2-Pad2)" "L_R2" "Net-(D3-Pad2)"
+    "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)" "Net-(D8-Pad2)" "Net-(D9-Pad2)" "Net-(D10-Pad2)" "Net-(D11-Pad2)"
+    "Net-(D12-Pad2)" "Net-(D13-Pad2)" "Net-(D14-Pad2)" "Net-(D15-Pad2)" "L_R3" "Net-(D16-Pad2)" "Net-(D17-Pad2)" "Net-(D18-Pad2)"
+    "R_R0" "Net-(D19-Pad2)" "R_R1" "Net-(D20-Pad2)" "R_R2" "Net-(D21-Pad2)" "Net-(D22-Pad2)" "Net-(D23-Pad2)"
+    "Net-(D24-Pad2)" "Net-(D25-Pad2)" "Net-(D26-Pad2)" "Net-(D27-Pad2)" "Net-(D28-Pad2)" "Net-(D29-Pad2)" "Net-(D30-Pad2)" "Net-(D31-Pad2)"
+    "Net-(D32-Pad2)" "Net-(D33-Pad2)" "R_R3" "Net-(D34-Pad2)" "Net-(D35-Pad2)" "Net-(D36-Pad2)" "L_BAT+" "L_BAT-"
+    "R_BAT+" "R_BAT-" "L_RE-C" "L_3V3" "R_RE-C" "R_3V3" "L_C0" "L_C1"
+    "L_C2" "L_C3" "L_C4" "R_C0" "R_C1" "R_C2" "R_C3" "R_C4"
+    "L_RE-A" "L_RE-B" "R_RE-A" "R_RE-B" "unconnected-(U1-Pad14)" "unconnected-(U1-Pad17)" "unconnected-(U1-Pad18)" "unconnected-(U1-Pad19)"
+    "unconnected-(U2-Pad14)" "unconnected-(U2-Pad17)" "unconnected-(U2-Pad18)" "unconnected-(U2-Pad19)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 375.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 375.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

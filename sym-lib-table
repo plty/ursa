@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "marbastlib-various")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/marbastlib-various.kicad_sym")(options "")(descr ""))
+  (lib (name "neopower")(type "KiCad")(uri "${KIPRJMOD}/neopower.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,170 @@
+2022-04-23 07:42:13.890 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:42:14.219 [main] TRACE Method 'MainApplication.main()' was performed in 0.43 seconds.
+2022-04-23 07:42:20.473 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:42:20.812 [main] TRACE Method 'MainApplication.main()' was performed in 0.45 seconds.
+2022-04-23 07:42:25.547 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.dsn'...
+2022-04-23 07:42:27.600 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.rules'...
+2022-04-23 07:42:27.601 [AWT-EventQueue-0] ERROR File 'ursus-arctos.rules' was not found.
+2022-04-23 07:42:39.564 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:42:42.517 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:42:42.835 [main] TRACE Method 'MainApplication.main()' was performed in 0.42 seconds.
+2022-04-23 07:42:49.804 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:42:50.091 [main] TRACE Method 'MainApplication.main()' was performed in 0.39 seconds.
+2022-04-23 07:43:04.698 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:43:05.003 [main] TRACE Method 'MainApplication.main()' was performed in 0.40 seconds.
+2022-04-23 07:43:15.126 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:43:15.418 [main] TRACE Method 'MainApplication.main()' was performed in 0.38 seconds.
+2022-04-23 07:43:21.337 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:43:21.375 [main] INFO  -de [design input file]: loads up a Specctra .dsn file at startup
+-di [design input directory]: if the GUI is used, this sets the default folder for the open design dialogs
+-dr [design rules file]: reads the rules from a previously saved .rules file
+-do [design output file]: saves a Specctra board (.dsn), a Specctra session file (.ses) or Eagle session script file (.scr) when the routing is finished
+-mp [number of passes]: sets the upper limit of the number of auto-router passes that will be performed
+-l [language]: "de" for German, "zh" for Simplified Chinese, otherwise it's English.
+-mt [number of threads]: sets thread pool size for route optimization. The default is one less than the number of logical processors in the system.
+-us [greedy | global | hybrid]: sets board updating strategy for route optimization: greedy, global optimal or hybrid. The default is greedy. When hybrid is selected, another option "hr" specifies hybrid ratio.
+-hr [m:n]: sets hybrid ratio in the format of #_global_optiomal_passes:#_prioritized_passes. The default is 1:1. It's only effective when hybrid strategy is selected.
+-is [sequential | random | prioritized]: sets item selection strategy for route optimization: sequential, random, prioritized. The default is prioritized. Prioritied stragegy selects items based on scores calculated in previous round.
+-h: shows help
+2022-04-23 07:43:29.254 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:43:29.572 [main] TRACE Method 'MainApplication.main()' was performed in 0.41 seconds.
+2022-04-23 07:43:33.246 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.dsn'...
+2022-04-23 07:43:35.303 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.rules'...
+2022-04-23 07:43:35.303 [AWT-EventQueue-0] ERROR File 'ursus-arctos.rules' was not found.
+2022-04-23 07:44:10.437 [Thread-0] INFO  Starting auto-routing...
+2022-04-23 07:44:38.570 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board '5f9518435ace054f74a62bc34c97640d' making 236 changes' was performed in 20.35 seconds.
+2022-04-23 07:44:51.820 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '587ea2878a372dac10da49233e780b00' making 39 changes' was performed in 12.39 seconds.
+2022-04-23 07:45:01.376 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '4321aa997b338e13ed9c7a3b89afc2da' making 0 changes' was performed in 8.86 seconds.
+2022-04-23 07:45:01.603 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 51.16 seconds.
+2022-04-23 07:45:01.604 [Thread-0] INFO  Auto-routing was completed in 51.16 seconds.
+2022-04-23 07:45:01.607 [Thread-0] INFO  Starting route optimization on 7 threads...
+2022-04-23 07:45:43.157 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 99 vias and 2,827,021.47 trace length running on 7 threads.' was performed in 41.49 seconds.
+2022-04-23 07:46:24.049 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 153 items, 91 vias and 2,817,181.07 trace length running on 7 threads.' was performed in 40.88 seconds.
+2022-04-23 07:47:10.714 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #3 with 147 items, 91 vias and 2,817,181.07 trace length running on 7 threads.' was performed in 46.66 seconds.
+2022-04-23 07:47:10.719 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 2 minute(s) 9.11 seconds.
+2022-04-23 07:47:10.722 [Thread-0] INFO  Route optimization was completed in 2 minute(s) 9.11 seconds and it improved the design by ~50.17%.
+2022-04-23 07:47:10.748 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 3 minute(s) 0.31 seconds.
+2022-04-23 07:54:51.622 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 07:54:51.863 [main] TRACE Method 'MainApplication.main()' was performed in 0.32 seconds.
+2022-04-23 07:55:00.278 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.dsn'...
+2022-04-23 07:55:01.881 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.rules'...
+2022-04-23 07:55:01.882 [AWT-EventQueue-0] ERROR File 'ursus-arctos.rules' was not found.
+2022-04-23 07:55:10.531 [Thread-0] INFO  Starting auto-routing...
+2022-04-23 07:55:30.978 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board '332a1534dc911cf0bc8c7a14b156d447' making 174 changes' was performed in 19.52 seconds.
+2022-04-23 07:55:39.091 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '99f3e2ed664baf3e7e202529534ab848' making 45 changes' was performed in 7.63 seconds.
+2022-04-23 07:55:46.084 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '0bc2ddb903171c777f90196de3dc2351' making 23 changes' was performed in 6.54 seconds.
+2022-04-23 07:55:52.079 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board '171dbdb7725f046c8a421bf3664cb937' making 2 changes' was performed in 5.55 seconds.
+2022-04-23 07:55:57.861 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board 'd9ac847cf6ca7604baa12f4b64130353' making 8 changes' was performed in 5.36 seconds.
+2022-04-23 07:56:04.001 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board 'bc71744dbaf4e0456ea68112136773cf' making 0 changes' was performed in 5.73 seconds.
+2022-04-23 07:56:04.127 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 53.59 seconds.
+2022-04-23 07:56:04.128 [Thread-0] INFO  Auto-routing was completed in 53.59 seconds.
+2022-04-23 07:56:04.130 [Thread-0] INFO  Starting route optimization on 7 threads...
+2022-04-23 07:56:32.137 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 34 vias and 2,788,843.51 trace length running on 7 threads.' was performed in 27.98 seconds.
+2022-04-23 07:56:58.929 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 129 items, 34 vias and 2,788,843.51 trace length running on 7 threads.' was performed in 26.78 seconds.
+2022-04-23 07:56:58.935 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 54.80 seconds.
+2022-04-23 07:56:58.937 [Thread-0] INFO  Route optimization was completed in 54.80 seconds.
+2022-04-23 07:56:58.960 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 1 minute(s) 48.43 seconds.
+2022-04-23 07:57:53.085 [Thread-15] INFO  Starting auto-routing...
+2022-04-23 07:58:09.597 [Thread-15] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board 'ae21dbe0e1ccd02b33232c700cabfce1' making 154 changes' was performed in 13.20 seconds.
+2022-04-23 07:58:22.175 [Thread-15] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '77cc0c8feb1fc2c14556af48f97242ce' making 74 changes' was performed in 12.19 seconds.
+2022-04-23 07:58:37.638 [Thread-15] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '35fc97445e846537ad6705c4ae81ab93' making 30 changes' was performed in 14.94 seconds.
+2022-04-23 07:58:52.269 [Thread-15] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board '557f57b51239ce65164916e900c4da5a' making 9 changes' was performed in 13.95 seconds.
+2022-04-23 07:59:04.703 [Thread-15] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '9b756a64426b27ea8efbb85353c50b41' making 0 changes' was performed in 11.95 seconds.
+2022-04-23 07:59:04.880 [Thread-15] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 1 minute(s) 11.79 seconds.
+2022-04-23 07:59:04.881 [Thread-15] INFO  Auto-routing was completed in 1 minute(s) 11.79 seconds.
+2022-04-23 07:59:04.881 [Thread-15] INFO  Starting route optimization on 7 threads...
+2022-04-23 07:59:36.201 [Thread-15] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 61 vias and 2,874,876.46 trace length running on 7 threads.' was performed in 31.30 seconds.
+2022-04-23 08:00:06.388 [Thread-15] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 147 items, 61 vias and 2,874,876.46 trace length running on 7 threads.' was performed in 30.18 seconds.
+2022-04-23 08:00:06.394 [Thread-15] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 1 minute(s) 1.51 seconds.
+2022-04-23 08:00:06.395 [Thread-15] INFO  Route optimization was completed in 1 minute(s) 1.51 seconds.
+2022-04-23 08:00:06.421 [Thread-15] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 2 minute(s) 13.34 seconds.
+2022-04-23 08:05:52.780 [AWT-EventQueue-0] INFO  Saving 'ursus-arctos.ses'...
+2022-04-23 08:07:57.584 [Thread-30] INFO  Starting auto-routing...
+2022-04-23 08:08:11.221 [Thread-30] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board '390c17bbfdd07836a254fcfcef2af639' making 108 changes' was performed in 10.29 seconds.
+2022-04-23 08:08:24.156 [Thread-30] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board 'fab69ce3e65685ad0c9e16b7c9184459' making 81 changes' was performed in 12.36 seconds.
+2022-04-23 08:08:38.687 [Thread-30] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '3e67247a74921df75b6b06785fab66ac' making 87 changes' was performed in 13.74 seconds.
+2022-04-23 08:08:50.874 [Thread-30] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board 'ce10112282575065ac941c9f12001540' making 50 changes' was performed in 11.56 seconds.
+2022-04-23 08:09:03.055 [Thread-30] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '804e983ec824a17a97c9e364c1f1a9ea' making 23 changes' was performed in 11.46 seconds.
+2022-04-23 08:09:14.805 [Thread-30] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board '5823b186cb0e34f57b45e8917f5df59a' making 28 changes' was performed in 11.05 seconds.
+2022-04-23 08:09:25.636 [Thread-30] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board '7b871de874f9c7d3ebecc6a3f30f2404' making 18 changes' was performed in 10.40 seconds.
+2022-04-23 08:09:34.034 [Thread-30] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board '24c825ef81cacee6ae382ec8c50f03ae' making 0 changes' was performed in 7.85 seconds.
+2022-04-23 08:09:34.204 [Thread-30] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 1 minute(s) 36.62 seconds.
+2022-04-23 08:09:34.205 [Thread-30] INFO  Auto-routing was completed in 1 minute(s) 36.62 seconds.
+2022-04-23 08:09:34.206 [Thread-30] INFO  Starting route optimization on 7 threads...
+2022-04-23 08:10:04.262 [Thread-30] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 51 vias and 2,854,533.98 trace length running on 7 threads.' was performed in 30.04 seconds.
+2022-04-23 08:10:30.176 [Thread-30] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 137 items, 51 vias and 2,854,533.98 trace length running on 7 threads.' was performed in 25.91 seconds.
+2022-04-23 08:10:30.181 [Thread-30] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 55.97 seconds.
+2022-04-23 08:10:30.181 [Thread-30] INFO  Route optimization was completed in 55.97 seconds.
+2022-04-23 08:10:30.200 [Thread-30] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 2 minute(s) 32.62 seconds.
+2022-04-23 08:10:47.979 [AWT-EventQueue-0] INFO  Saving 'ursus-arctos.ses'...
+2022-04-23 08:10:49.700 [AWT-EventQueue-0] INFO  Saving 'ursus-arctos.rules'...
+2022-04-23 08:14:41.654 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 08:14:41.928 [main] TRACE Method 'MainApplication.main()' was performed in 0.36 seconds.
+2022-04-23 08:15:14.547 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.dsn'...
+2022-04-23 08:15:16.210 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.rules'...
+2022-04-23 08:16:52.630 [Thread-0] INFO  Starting auto-routing...
+2022-04-23 08:17:20.966 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #24 on board '332a1534dc911cf0bc8c7a14b156d447' making 254 changes' was performed in 27.15 seconds.
+2022-04-23 08:17:29.567 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board '8bac812b99cb2d2136fa34e8491a509b' making 0 changes' was performed in 7.76 seconds.
+2022-04-23 08:17:29.704 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 37.07 seconds.
+2022-04-23 08:17:29.705 [Thread-0] INFO  Auto-routing was completed in 37.07 seconds.
+2022-04-23 08:17:29.706 [Thread-0] INFO  Starting route optimization on 7 threads...
+2022-04-23 08:18:02.151 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 91 vias and 2,803,590.70 trace length running on 7 threads.' was performed in 32.42 seconds.
+2022-04-23 08:18:33.040 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 146 items, 91 vias and 2,803,590.70 trace length running on 7 threads.' was performed in 30.88 seconds.
+2022-04-23 08:18:33.045 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 1 minute(s) 3.34 seconds.
+2022-04-23 08:18:33.047 [Thread-0] INFO  Route optimization was completed in 1 minute(s) 3.34 seconds.
+2022-04-23 08:18:33.072 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 1 minute(s) 40.44 seconds.
+2022-04-23 08:58:15.452 [main] INFO  Freerouting v1.5.0-SNAPSHOT (build-date: 2022-04-02)
+2022-04-23 08:58:15.919 [main] TRACE Method 'MainApplication.main()' was performed in 0.68 seconds.
+2022-04-23 08:58:18.750 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.dsn'...
+2022-04-23 08:58:22.181 [AWT-EventQueue-0] INFO  Opening 'ursus-arctos.rules'...
+2022-04-23 08:59:34.165 [Thread-0] INFO  Starting auto-routing...
+2022-04-23 09:00:24.241 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board '332a1534dc911cf0bc8c7a14b156d447' making 244 changes' was performed in 48.39 seconds.
+2022-04-23 09:00:41.900 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #26 on board '43dd19dfa115642f8eb9e8032fd271a9' making 0 changes' was performed in 16.02 seconds.
+2022-04-23 09:00:42.154 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 1 minute(s) 7.98 seconds.
+2022-04-23 09:00:42.155 [Thread-0] INFO  Auto-routing was completed in 1 minute(s) 7.98 seconds.
+2022-04-23 09:00:42.156 [Thread-0] INFO  Starting route optimization on 7 threads...
+2022-04-23 09:01:42.317 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 82 vias and 2,797,231.17 trace length running on 7 threads.' was performed in 1 minute(s) 0.11 seconds.
+2022-04-23 09:02:37.431 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 148 items, 82 vias and 2,797,231.17 trace length running on 7 threads.' was performed in 55.09 seconds.
+2022-04-23 09:02:37.438 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 1 minute(s) 55.28 seconds.
+2022-04-23 09:02:37.441 [Thread-0] INFO  Route optimization was completed in 1 minute(s) 55.28 seconds.
+2022-04-23 09:02:37.481 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 3 minute(s) 3.32 seconds.
+2022-04-23 09:03:04.761 [AWT-EventQueue-0] INFO  Saving 'ursus-arctos.ses'...
+2022-04-23 09:03:09.607 [AWT-EventQueue-0] INFO  Saving 'ursus-arctos.rules'...
+2022-04-23 09:04:28.435 [Thread-15] INFO  Starting auto-routing...
+2022-04-23 09:04:39.619 [Thread-15] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board '1a2dc9ec0df5eddf80864958ccf0c66a' making 18 changes' was performed in 3.08 seconds.
+2022-04-23 09:04:43.449 [Thread-15] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '8ac2a185cf6acdeb376150c3bae68b05' making 0 changes' was performed in 2.89 seconds.
+2022-04-23 09:04:43.700 [Thread-15] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 15.26 seconds.
+2022-04-23 09:04:43.701 [Thread-15] INFO  Auto-routing was completed in 15.26 seconds.
+2022-04-23 09:04:43.701 [Thread-15] INFO  Starting route optimization on 7 threads...
+2022-04-23 09:04:43.719 [Thread-15] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 0.02 seconds.
+2022-04-23 09:04:43.720 [Thread-15] INFO  Route optimization was completed in 0.02 seconds.
+2022-04-23 09:04:43.752 [Thread-15] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 15.32 seconds.
+2022-04-23 09:11:10.110 [Thread-16] INFO  Starting auto-routing...
+2022-04-23 09:11:39.310 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board '68ef7405f79c7daf4f4d2cb8baa75089' making 90 changes' was performed in 21.58 seconds.
+2022-04-23 09:11:58.323 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '80e68bb44b5152dfe8a1f44c98f340a5' making 64 changes' was performed in 18.18 seconds.
+2022-04-23 09:12:14.332 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board 'c05846e9d92e0072aebefc3a7723baea' making 54 changes' was performed in 15.15 seconds.
+2022-04-23 09:12:30.576 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board 'd450881855a965057a80ca0959cd1f42' making 53 changes' was performed in 15.27 seconds.
+2022-04-23 09:12:46.577 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '82b5c28afb1cc9b894cb6fc59f8c121b' making 45 changes' was performed in 14.94 seconds.
+2022-04-23 09:13:03.920 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board '190df5618661e37d325df4cb16c2d803' making 53 changes' was performed in 16.46 seconds.
+2022-04-23 09:13:22.012 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board '5989b325bcbe7ac9a00d46d01ee8e5d4' making 34 changes' was performed in 17.15 seconds.
+2022-04-23 09:13:37.809 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board '8c56ec657402d05a2154683ce3cca9d1' making 40 changes' was performed in 14.77 seconds.
+2022-04-23 09:13:48.363 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board '45074f4cfdc26de7e87e2b8596df840c' making 16 changes' was performed in 9.86 seconds.
+2022-04-23 09:14:00.452 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board 'ef88f11b400715d91b00efebef37c94a' making 2 changes' was performed in 11.65 seconds.
+2022-04-23 09:14:16.606 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board 'b462524285ba6e71e98e31ccefeabd64' making 10 changes' was performed in 15.35 seconds.
+2022-04-23 09:14:33.900 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #12 on board '2628a66c5d1e4ceb92a679e1d7be90f6' making 2 changes' was performed in 16.62 seconds.
+2022-04-23 09:14:52.714 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #13 on board '3ca2c20fc72c75fdd92aefa2f7742e79' making 10 changes' was performed in 18.21 seconds.
+2022-04-23 09:15:10.074 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #14 on board 'fe91fd8600dcf7ba0b3d2d56d03934ff' making 2 changes' was performed in 16.76 seconds.
+2022-04-23 09:15:27.871 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #15 on board 'de334856e24a410c3e6a6182b70736a6' making 6 changes' was performed in 16.64 seconds.
+2022-04-23 09:15:41.593 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #16 on board 'd0b665543722ca93c1dbc7752c7b7b99' making 2 changes' was performed in 13.11 seconds.
+2022-04-23 09:15:54.950 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #17 on board '538ad93eff9f47c7ba1aebb3234d34e3' making 11 changes' was performed in 12.78 seconds.
+2022-04-23 09:16:07.909 [Thread-16] TRACE Method 'BatchAutorouter.autoroute_pass #18 on board '7e541ccab36afa6a462121baef6df509' making 0 changes' was performed in 12.35 seconds.
+2022-04-23 09:16:08.174 [Thread-16] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 4 minute(s) 58.06 seconds.
+2022-04-23 09:16:08.175 [Thread-16] INFO  Auto-routing was completed in 4 minute(s) 58.06 seconds.
+2022-04-23 09:16:08.175 [Thread-16] INFO  Starting route optimization on 7 threads...
+2022-04-23 09:16:47.006 [Thread-16] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 46 vias and 2,815,273.96 trace length running on 7 threads.' was performed in 38.81 seconds.
+2022-04-23 09:17:25.303 [Thread-16] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 136 items, 46 vias and 2,815,273.96 trace length running on 7 threads.' was performed in 38.28 seconds.
+2022-04-23 09:17:25.310 [Thread-16] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 1 minute(s) 17.13 seconds.
+2022-04-23 09:17:25.312 [Thread-16] INFO  Route optimization was completed in 1 minute(s) 17.13 seconds.
+2022-04-23 09:17:25.340 [Thread-16] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 6 minute(s) 15.23 seconds.
+2022-04-23 09:19:30.549 [AWT-EventQueue-0] INFO  Saving 'ursus-arctos.ses'...
+2022-04-23 09:19:32.408 [AWT-EventQueue-0] INFO  Saving 'ursus-arctos.rules'...
